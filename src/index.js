@@ -11,7 +11,6 @@ const SERVER_HOST = process.env.SERVER_HOST || 'localhost';
 const PORT = process.env.PORT || 8080;
 const app = express();
 
-app.use(cors());
 app.use(express.json());
 app.use((req, res, next) => {
   logger.info(`Receive request from ${req.ip}`);
@@ -24,7 +23,7 @@ app.get('/api/search', async (req, res) => {
     if (!query) {
       return res.status(400).json({ error: 'query is required' });
     }
-    const fuse = new Fuse(cities.cities, {
+    const fuse = new Fuse(cities, {
       keys: ['name'],
       threshold: 0.3
     });

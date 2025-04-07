@@ -40,3 +40,12 @@
 {"level":"info","message":"Receive request from ::1","timestamp":"2025-04-05T10:18:50.419Z"}
 {"level":"info","message":"Receive request from ::1","timestamp":"2025-04-05T10:18:50.578Z"}
 {"level":"info","message":"Receive request from ::1","timestamp":"2025-04-05T10:18:50.809Z"}
+{"level":"info","message":"Receive request from ::1","timestamp":"2025-04-07T13:39:35.010Z"}
+{"level":"info","message":"Receive request from ::1","timestamp":"2025-04-07T13:39:35.170Z"}
+{"level":"info","message":"Receive request from ::1","timestamp":"2025-04-07T13:39:42.898Z"}
+{"level":"error","message":"Failed to search query: Cannot read properties of undefined (reading '0')","timestamp":"2025-04-07T13:39:42.899Z"}
+{"level":"info","message":"Receive request from ::1","timestamp":"2025-04-07T13:40:52.672Z"}
+{"level":"info","message":"Receive request from ::1","timestamp":"2025-04-07T13:41:02.980Z"}
+{"level":"error","message":"Failed to search query: Cannot read properties of undefined (reading '0')","timestamp":"2025-04-07T13:41:02.982Z"}
+{"level":"info","message":"Receive request from ::1","timestamp":"2025-04-07T13:44:06.236Z"}
+{"level":"info","message":"Receive request from ::1","timestamp":"2025-04-07T13:44:15.701Z"}
