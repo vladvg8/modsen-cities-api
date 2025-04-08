@@ -10,6 +10,10 @@ const logger = require('./logger');
 const SERVER_HOST = process.env.SERVER_HOST || 'localhost';
 const PORT = process.env.PORT || 8080;
 const app = express();
+const fuse = new Fuse(cities, {
+  keys: ['name'],
+  threshold: 0.3
+});
 
 app.use(cors());
 app.use(express.json());
@@ -24,10 +28,6 @@ app.get('/api/search', async (req, res) => {
     if (!query) {
       return res.status(400).json({ error: 'query is required' });
     }
-    const fuse = new Fuse(cities, {
-      keys: ['name'],
-      threshold: 0.3
-    });
     const results = fuse.search(query).slice(0, 10).map(result => result.item);
     return res.status(200).json(results);
   } catch (error) {
