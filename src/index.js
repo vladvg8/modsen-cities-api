@@ -12,7 +12,9 @@ const PORT = process.env.PORT || 8080;
 const app = express();
 const fuse = new Fuse(cities, {
   keys: ['name'],
-  threshold: 0.3
+  threshold: 0.5,
+  includeScore: false,
+  useExtendedSearch: true,
 });
 
 app.use(cors());
